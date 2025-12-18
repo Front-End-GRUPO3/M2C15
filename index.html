@@ -53,7 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="#carrito">
-                            <i class="material-icons nav-icon">shopping_cart</i>
+                            <i class="material-icons nav-icon" id="carrito-icon">shopping_cart</i>
                         </a>
                     </li>
                 </ul>
@@ -66,7 +66,7 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img-carousel-1.avif" class="d-block w-100" alt="Pasteles deliciosos">
+                    <img src="assets/img-carousel-1.jpg" class="d-block w-100" alt="Pasteles deliciosos">
                     <!-- Overlay semitransparente -->
                     <div class="carousel-overlay"></div>
                     <!-- Texto y botón centrados -->
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img-carousel-2.avif" class="d-block w-100" alt="Tartas frescas">
+                    <img src="assets/img-carousel-2.jpg" class="d-block w-100" alt="Tartas frescas">
                     <!-- Overlay semitransparente -->
                     <div class="carousel-overlay"></div>
                     <!-- Texto y botón centrados -->
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img-carousel-3.avif" class="d-block w-100" alt="Cupcakes variados">
+                    <img src="assets/img-carousel-3.jpg" class="d-block w-100" alt="Cupcakes variados">
                     <!-- Overlay semitransparente -->
                     <div class="carousel-overlay"></div>
                     <!-- Texto y botón centrados -->
@@ -105,6 +105,84 @@
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
+        </div>
+    </section>
+
+    <!-- Sección de productos destacados-->
+    <section id="productos" class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Pastel de Chocolate">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Pastel de Chocolate">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastel de Chocolate</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Tarta de Frutas">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Tarta de Frutas">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarta de Frutas</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Cupcakes">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Cupcakes">
+                    <div class="card-body">
+                        <h5 class="card-title">Cupcakes</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Pastel de Vainilla">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1617891262630-0b2f12c7a845?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Pastel de Vainilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastel de Vainilla</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Cheesecake">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1625600580052-95903481e7f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="col-md-4 mb-4 product-card" data-producto="Brownies">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1599785209707-26368fa3c8f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        class="card-img-top" alt="Brownies">
+                    <div class="card-body">
+                        <h5 class="card-title">Brownies</h5>
+                        <button class="btn btn-outline-danger btn-fav">❤ Favorito</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

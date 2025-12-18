@@ -124,6 +124,41 @@ body {
     transform: scale(1.05);
 }
 
+/* Sección productos destacados */
+.product-card.favorito {
+    border: 2px solid #FF5733;
+    box-shadow: 0 0 10px rgba(255,87,51,0.5);
+}
+
+/* Contenedor de cada card */
+.product-card .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* hace que ocupe todo el espacio disponible */
+}
+
+/* Card-body ocupa todo el espacio disponible para empujar el botón al final */
+.product-card .card-body {
+    flex: 1; /* hace que el contenido crezca y el botón quede al final */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* empuja el botón al final */
+}
+
+/* Botón siempre al final */
+.product-card .card-body .btn-fav {
+    margin-top: 10px;
+}
+
+/* Opcional: altura mínima uniforme */
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover; /* recorta la imagen sin deformar */
+}
+
+
+
+
 /* Iconos */
 .RetiroDespacho .material-symbols-outlined {
     color: #ed7b75;
